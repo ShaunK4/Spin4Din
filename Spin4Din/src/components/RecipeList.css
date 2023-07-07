@@ -1,0 +1,33 @@
+.recipe-list {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.random-recipe {
+  margin-bottom: 20px;
+}
+
+.ingredients {
+  margin-bottom: 20px;
+}
+
+.generate-button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.generate-button:hover {
+  background-color: #0056b3;
+}
+
+h2, h3 {
+  margin: 0;
+}
+
+p {
+  white-space: pre-line;
+}
