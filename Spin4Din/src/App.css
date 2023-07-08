@@ -1,10 +1,38 @@
 .app {
-    max-width: 960px;
-    margin: 0 auto;
-    padding: 20px;
+  margin: 0;
+  padding: 3px;
+  background: #cbbacc;
+  background: linear-gradient(0deg, rgba(203,186,204,1) 0%, rgba(37,128,179,1) 45%);;
+  color: #e1e5eb;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: top;
 }
-
-header {
+  
+.app-header {
     text-align: center;
-    margin-bottom: 20px;
+}
+  
+.app-h1 {
+    font-family:'Courier New', Courier, monospace;
+    font-size: 75px;
+    font-weight: bolder;
+    margin-bottom: 3px;
+}
+  
+.app-main .generate-button {
+    padding: 10px 20px;
+    background-color: #525E75;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+}
+  
+.app-main .generate-button:hover {
+    background-color: #66748f;
 }

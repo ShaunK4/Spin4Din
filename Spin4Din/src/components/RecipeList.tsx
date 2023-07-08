@@ -12,6 +12,7 @@ interface Recipe {
 function RecipeList() {
   const [recipesData, setRecipesData] = useState<Recipe[]>([]);
   const [randomRecipe, setRandomRecipe] = useState<Recipe | null>(null);
+  const [showRecipe, setShowRecipe] = useState(false);
 
   useEffect(() => {
     fetchRecipes();
@@ -46,26 +47,33 @@ function RecipeList() {
       const randomIndex = Math.floor(Math.random() * recipesData.length);
       const randomRecipeData = recipesData[randomIndex];
       setRandomRecipe(randomRecipeData || null);
+      setShowRecipe(true);
     }
   };
 
   return (
     <div className="recipe-list">
       <h2>Randomly Chosen Recipe:</h2>
-      <div className="random-recipe">
-        {randomRecipe && <span>{randomRecipe.Name}</span>}
+      <div className="recipe-container">
+        {showRecipe && randomRecipe && (
+          <div>
+            <div className="recipe-name-banner">
+              <div className="recipe-name">{randomRecipe.Name}</div>
+            </div>
+            <div className="ingredients">
+              <div className="ingredients-title">Ingredients:</div>
+              <div className="ingredients-list">
+                {randomRecipe.Ingredients.join("\n")}
+              </div>
+            </div>
+          </div>
+        )}
       </div>
-
-      {randomRecipe && (
-        <div className="ingredients">
-          <h3>Ingredients:</h3>
-          <p>{randomRecipe.Ingredients.join("\n")}</p>
-        </div>
-      )}
-
-      <button className="generate-button" onClick={generateNewRecipe}>
-        Generate New Recipe
-      </button>
+      <div className="generate-button-container">
+        <button className="generate-button" onClick={generateNewRecipe}>
+          Generate New Recipe
+        </button>
+      </div>
     </div>
   );
 }
