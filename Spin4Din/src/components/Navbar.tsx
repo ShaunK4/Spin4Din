@@ -16,6 +16,7 @@ function Navigationbar() {
           <Nav className="me-auto">
             <Nav.Link href="/">Home</Nav.Link>
             <Nav.Link href="/All">All Recipes</Nav.Link>
+            <Nav.Link href="/GroceryList">Grocery List</Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Container>

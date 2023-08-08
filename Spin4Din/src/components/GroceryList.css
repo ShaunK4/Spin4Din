@@ -1,0 +1,35 @@
+.grocery-list-container {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+  }
+  
+  .grocery-list-container h1 {
+    font-weight: bold;
+    color: #404b5f;
+    background-color: #ffffff;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .grocery-list {
+    width: 500px;
+  }
+  
+  .grocery-list-item {
+    text-align: center;
+    margin-bottom: 5px;
+  }
+  
+  .grocery-list-item-text {
+    flex-grow: 1;
+    margin-right: 10px;
+  }
+  
+  .grocery-list-item-button {
+    padding: 2px 6px;
+    font-size: 12px;
+  }
+  
