@@ -1,35 +1,61 @@
+
 .grocery-list-container {
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    padding: 10px;
-  }
-  
-  .grocery-list-container h1 {
-    font-weight: bold;
-    color: #404b5f;
-    background-color: #ffffff;
-    padding: 10px;
-    border-radius: 5px;
-    text-align: center;
-    margin-bottom: 20px;
-  }
-  
-  .grocery-list {
-    width: 500px;
-  }
-  
-  .grocery-list-item {
-    text-align: center;
-    margin-bottom: 5px;
-  }
-  
-  .grocery-list-item-text {
-    flex-grow: 1;
-    margin-right: 10px;
-  }
-  
-  .grocery-list-item-button {
-    padding: 2px 6px;
-    font-size: 12px;
-  }
-  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.grocery-list-container h1 {
+  font-weight: bold;
+  color: #404b5f;
+  background-color: #ffffff;
+  padding: 10px;
+  border-radius: 5px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.grocery-items {
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.grocery-item {
+  margin: 10px;
+  padding: 10px;
+  width: 400px;
+}
+
+.grocery-item h3 {
+  font-size: 1.2rem;
+  color: #404b5f;
+  background-color: #ffffff;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  text-align: left;
+  font-weight: bold ;
+  text-indent: 5px;
+}
+
+.ingredient-list {
+  padding: 0px;
+}
+
+.ingredient-list li {
+  margin: 5px 0;
+  text-indent: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.grocery-list-item-button {
+  padding: 4px 10px;
+  font-size: 10px;
+  margin-left: 30px;
+}

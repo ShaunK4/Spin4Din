@@ -1,33 +1,38 @@
 import { useSelector, useDispatch } from "react-redux";
-import { RootState, removeIngredient } from "./Store";
-import { Button } from "react-bootstrap";
+import { RootState } from "./Store";
+import { removeFromStore } from "./Store";
+import { Button } from "react-bootstrap"; 
 import "./GroceryList.css";
 
 function GroceryList() {
-  const ingredients = useSelector(
-    (state: RootState) => state.groceryList.ingredients
-  );
+  const storeRecipes = useSelector((state: RootState) => state.groceryList.storeRecipes);
   const dispatch = useDispatch();
 
-  const handleRemoveIngredient = (ingredient: string) => {
-    dispatch(removeIngredient(ingredient));
+  const handleRemoveFromList = (storeRecipeName: string, storeIngredient: string) => {
+    dispatch(removeFromStore({ storeRecipeName, storeIngredient }));
   };
 
   return (
     <div className="grocery-list-container">
-      <h1>Grocery List</h1>
-      <div className="grocery-list">
-        {ingredients.map((ingredient: string, index: number) => (
-          <div className="grocery-list-item" key={index}>
-            <span className="grocery-list-item-text">{ingredient}</span>
-            <Button
-              className="grocery-list-item-button"
-              variant="secondary"
-              size="sm"
-              onClick={() => handleRemoveIngredient(ingredient)}
-            >
-              - Remove
-            </Button>
+      <h1>Your Grocery List:</h1>
+      <div className="grocery-items">
+        {Object.keys(storeRecipes).map((storeRecipeName, index) => (
+          <div key={index} className="grocery-item">
+            <h3>{storeRecipeName}</h3>
+            <ul className="ingredient-list">
+              {storeRecipes[storeRecipeName].map((storeIngredient, i) => (
+                <li key={i}> * {storeIngredient}
+                  <Button
+                    className="grocery-list-item-button"
+                    variant="secondary"
+                    size="sm"
+                    onClick={() => handleRemoveFromList(storeRecipeName, storeIngredient)}
+                  >
+                    Remove
+                  </Button>
+                </li>
+              ))}
+            </ul>
           </div>
         ))}
       </div>

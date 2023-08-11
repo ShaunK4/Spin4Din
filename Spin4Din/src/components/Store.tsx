@@ -1,38 +1,53 @@
 import { configureStore, createSlice, PayloadAction } from "@reduxjs/toolkit";
 
+interface GroceryListState {
+  storeRecipes: {
+    [storeRecipeName: string]: string[];
+  };
+}
+
+// Load persisted state from localStorage
+const persistedState = JSON.parse(localStorage.getItem("groceryList") || "null") as GroceryListState | null;
+
 const groceryListSlice = createSlice({
   name: "groceryList",
   initialState: {
-    ingredients: localStorage.getItem("groceryListIngredients")
-      ? JSON.parse(localStorage.getItem("groceryListIngredients") || "")
-      : ([] as string[]),
-  },
+    storeRecipes: persistedState?.storeRecipes || {} as { [storeRecipeName: string]: string[] },
+  } as GroceryListState,
   reducers: {
-    addIngredient: (state, action: PayloadAction<string>) => {
-      state.ingredients = [...state.ingredients, action.payload];
-      localStorage.setItem(
-        "groceryListIngredients",
-        JSON.stringify(state.ingredients)
-      );
+    addedToStore: (state, action: PayloadAction<{ storeRecipeName: string; storeIngredient: string }>) => {
+      const { storeRecipeName, storeIngredient } = action.payload;
+      if (!state.storeRecipes[storeRecipeName]) {
+        state.storeRecipes[storeRecipeName] = [];
+      }
+      state.storeRecipes[storeRecipeName].push(storeIngredient);
     },
-    removeIngredient: (state, action: PayloadAction<string>) => {
-      state.ingredients = state.ingredients.filter(
-        (item: string) => item !== action.payload
-      );
-      localStorage.setItem(
-        "groceryListIngredients",
-        JSON.stringify(state.ingredients)
-      );
-    },
+    removeFromStore: (state, action: PayloadAction<{ storeRecipeName: string; storeIngredient: string }>) => {
+      const { storeRecipeName, storeIngredient } = action.payload;
+      if (state.storeRecipes[storeRecipeName]) {
+        state.storeRecipes[storeRecipeName] = state.storeRecipes[storeRecipeName].filter(item => item !== storeIngredient);
+        
+        // If the list becomes empty, remove the storeRecipeName entry
+        if (state.storeRecipes[storeRecipeName].length === 0) {
+          delete state.storeRecipes[storeRecipeName];
+        }
+      }
+    },    
   },
 });
 
-export const { addIngredient, removeIngredient } = groceryListSlice.actions;
+export const { addedToStore, removeFromStore } = groceryListSlice.actions;
 
 const store = configureStore({
   reducer: {
     groceryList: groceryListSlice.reducer,
   },
+});
+
+// Subscribe to store changes to persist state to localStorage
+store.subscribe(() => {
+  const state = store.getState();
+  localStorage.setItem("groceryList", JSON.stringify(state.groceryList));
 });
 
 export default store;

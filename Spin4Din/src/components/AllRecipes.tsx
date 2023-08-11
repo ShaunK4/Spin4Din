@@ -2,17 +2,17 @@ import React, { useState } from "react";
 import { Dropdown, Card, Button } from "react-bootstrap";
 import { useRecipesData, Recipe } from "./RecipeFunction.tsx";
 import { useDispatch } from "react-redux";
-import { addIngredient } from "./Store";
+import { addedToStore } from "./Store";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCheck } from '@fortawesome/free-solid-svg-icons';
 import "./AllRecipes.css";
 
 function AllRecipes() {
-  const recipesData = useRecipesData();
+  const allRecipesData = useRecipesData();
   const [selectedRecipe, setSelectedRecipe] = useState<Recipe | null>(null);
   const [dropdownValue, setDropdownValue] = useState("");
   const [showDropdown, setShowDropdown] = useState(false);
-  const [addedIngredients, setAddedIngredients] = useState<string[]>([]);
+  const [ingredientsToAddToStore, setIngredientsToAddToStore] = useState<string[]>([]);
   const dispatch = useDispatch();
 
   const handleRecipeSelection = (recipe: Recipe) => {
@@ -25,7 +25,7 @@ function AllRecipes() {
     setDropdownValue(e.target.value.toLowerCase());
   };
 
-  const filteredRecipes = recipesData
+  const filteredRecipes = allRecipesData
     .filter((recipe) => recipe.Name.toLowerCase().startsWith(dropdownValue))
     .sort((a, b) => a.Name.localeCompare(b.Name));
 
@@ -34,13 +34,13 @@ function AllRecipes() {
   };
 
   const isIngredientAdded = (ingredient: string) => {
-    return addedIngredients.includes(ingredient);
+    return ingredientsToAddToStore.includes(ingredient);
   };
 
-  const handleIngredientSelect = (ingredient: string) => {
+  const handleIngredientSelect = (recipe: Recipe, ingredient: string) => {
     if (!isIngredientAdded(ingredient)) {
-      setAddedIngredients((prevIngredients) => [...prevIngredients, ingredient]);
-      dispatch(addIngredient(ingredient));
+      setIngredientsToAddToStore((prevIngredients) => [...prevIngredients, ingredient]);
+      dispatch(addedToStore({ storeRecipeName: recipe.Name, storeIngredient: ingredient }));
     }
   };
 
@@ -93,7 +93,7 @@ function AllRecipes() {
                     className={`add-button ${isIngredientAdded(ingredient) ? "added" : ""}`}
                     variant="secondary"
                     size="sm"
-                    onClick={() => handleIngredientSelect(ingredient)}
+                    onClick={() => handleIngredientSelect(selectedRecipe, ingredient)}
                   >
                     {isIngredientAdded(ingredient) ? <FontAwesomeIcon icon={faCheck} style={{ color: "#fff" }} /> : "+"}
                   </Button>
