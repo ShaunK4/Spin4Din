@@ -1,8 +1,8 @@
 import { useSelector, useDispatch } from "react-redux";
 import { RootState } from "./Store";
-import { removeFromStore } from "./Store";
+import { removeFromStore, removeAllFromStore } from "./Store";
 import { Button } from "react-bootstrap"; 
-import "./GroceryList.css";
+import "../styles/GroceryList.css";
 
 function GroceryList() {
   const storeRecipes = useSelector((state: RootState) => state.groceryList.storeRecipes);
@@ -10,6 +10,10 @@ function GroceryList() {
 
   const handleRemoveFromList = (storeRecipeName: string, storeIngredient: string) => {
     dispatch(removeFromStore({ storeRecipeName, storeIngredient }));
+  };
+
+  const handleRemoveAll = () => {
+    dispatch(removeAllFromStore()); // Dispatch the new action to remove all items
   };
 
   return (
@@ -36,6 +40,13 @@ function GroceryList() {
           </div>
         ))}
       </div>
+      <Button
+        variant="danger"
+        onClick={handleRemoveAll}
+        disabled={Object.keys(storeRecipes).length === 0} // Disable if the list is empty
+      >
+        Remove All
+      </Button>
     </div>
   );
 }

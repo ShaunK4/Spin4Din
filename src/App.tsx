@@ -25,7 +25,7 @@ function App() {
               colors={["#fffcff", "#cbbacc"]}
               animate={true}
               animateDirection={"horizontal"}
-              animateDuration={9}
+              animateDuration={7}
             >
               Spin4Din
             </LinearTextGradient>

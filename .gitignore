@@ -23,3 +23,4 @@ dist-ssr
 *.sln
 *.sw?
 ApiConfig.json
+Api.tsx

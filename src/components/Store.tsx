@@ -32,11 +32,14 @@ const groceryListSlice = createSlice({
           delete state.storeRecipes[storeRecipeName];
         }
       }
-    },    
+    },
+    removeAllFromStore: (state) => {
+      state.storeRecipes = {}; // Clear the entire storeRecipes object
+    },
   },
 });
 
-export const { addedToStore, removeFromStore } = groceryListSlice.actions;
+export const { addedToStore, removeFromStore, removeAllFromStore } = groceryListSlice.actions;
 
 const store = configureStore({
   reducer: {

@@ -1,6 +1,5 @@
 import { useState, useEffect } from "react";
-import axios from "axios";
-import { getApiUrl } from "../Api.tsx";
+import demoData from "../assets/DemoData.json";
 
 export interface Recipe {
   Name: string;
@@ -19,19 +18,13 @@ export function useRecipesData() {
     }
   }, []);
 
-  const fetchRecipes = async () => {
-    try {
-      const apiUrl = getApiUrl();
-      const response = await axios.get(`${apiUrl}`);
-      const recipeList: Recipe[] = response.data.body.map((item: any) => ({
-        Name: item.Name,
-        Ingredients: item.Ingredients.split("\n"),
-      }));
-      setRecipesData(recipeList);
-      localStorage.setItem("recipes", JSON.stringify(recipeList));
-    } catch (error) {
-      console.error("Error fetching recipes:", error);
-    }
+  const fetchRecipes = () => {
+    const recipeList: Recipe[] = demoData.map((item: any) => ({
+      Name: item.Name.S,
+      Ingredients: item.Ingredients.S.split("\n"),
+    }));
+    setRecipesData(recipeList);
+    localStorage.setItem("recipes", JSON.stringify(recipeList));
   };
 
   return recipesData;

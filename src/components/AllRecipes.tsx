@@ -5,7 +5,8 @@ import { useDispatch } from "react-redux";
 import { addedToStore } from "./Store";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCheck } from '@fortawesome/free-solid-svg-icons';
-import "./AllRecipes.css";
+import GroceryListModal from "./GroceryModal";
+import "../styles/AllRecipes.css";
 
 function AllRecipes() {
   const allRecipesData = useRecipesData();
@@ -13,6 +14,7 @@ function AllRecipes() {
   const [dropdownValue, setDropdownValue] = useState("");
   const [showDropdown, setShowDropdown] = useState(false);
   const [ingredientsToAddToStore, setIngredientsToAddToStore] = useState<string[]>([]);
+  const [modalShow, setModalShow] = useState(false);
   const dispatch = useDispatch();
 
   const handleRecipeSelection = (recipe: Recipe) => {
@@ -110,6 +112,10 @@ function AllRecipes() {
           </Card.Body>
         </Card>
       )}
+      <button className="grocery-button" onClick={() => setModalShow(true)}>
+        Open Grocery List
+      </button>
+      <GroceryListModal show={modalShow} onClose={() => setModalShow(false)} />
     </div>
   );
 }

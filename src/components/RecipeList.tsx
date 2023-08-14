@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import "./RecipeList.css";
+import "../styles/RecipeList.css";
 import { Recipe, useRecipesData } from "./RecipeFunction.tsx";
 
 function RecipeList() {

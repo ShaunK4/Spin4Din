@@ -1,7 +1,7 @@
 .app {
     margin: 0;
     padding: 3px;
-    background: linear-gradient(0deg, rgba(203, 186, 204, 1) 0%, rgba(37, 128, 179, 1) 45%);
+    background: linear-gradient(0deg, rgb(203, 186, 204) 0%, rgb(37, 128, 179) 45%);
     color: #e1e5eb;
     min-height: 100vh;
     flex-grow: 1;
