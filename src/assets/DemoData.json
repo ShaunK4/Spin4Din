@@ -1,0 +1,563 @@
+[
+    {
+        "Id": {
+            "N": "20"
+        },
+        "Ingredients": {
+            "S": "3 tblsp Cooking Oil\n2 tblsp Slap Ya Mamma\n10 oz Andouille Sausage\n1 lb Chicken\n1 lb Raw Shrimp\n1 Onion\n1 Small Green Bell Pepper\n2 Celery Stalks\n4 Cloves of Garlic\n14 oz Can Crushed Tomatoes\n1 tsp Salt\n1/2 tsp Pepper\n1 tsp Thyme and Oregano\n1/2 tsp Red Pepper Flakes\n1/2 tsp Hot Sauce\n1 1/2 Cup White Rice\n3 Cups Chicken Broth\nSliced Green onion\n2 tsp Worcestshire"
+        },
+        "Name": {
+            "S": "Creole Jambalaya"
+        }
+    },
+    {
+        "Id": {
+            "N": "21"
+        },
+        "Ingredients": {
+            "S": "Salad Mix of your choice\nMeat/Topping of your choice\nSalad Dressing\nGarlic Bread (or other side item)"
+        },
+        "Name": {
+            "S": "Dinner Salad"
+        }
+    },
+    {
+        "Id": {
+            "N": "49"
+        },
+        "Ingredients": {
+            "S": "1 lb Ground Beef\n1/2 Cup Chopped Onion\n2 Cloves Garlic\n1 tblsp Cumin\n1 tsp Chilli Powder\n1 8 oz Block Cream Cheese\n2 14.5 oz Cans Beef Broth\n2 10 oz Cans Diced Tomatoes and Green Chilis\n1 4 oz Can Green Chilis\n1/2 Cup Heavy Cream\nSalt"
+        },
+        "Name": {
+            "S": "Taco Soup"
+        }
+    },
+    {
+        "Id": {
+            "N": "35"
+        },
+        "Ingredients": {
+            "S": "Chuck Roast\n2 tblsp Canola Oil\n2 tsp Salt\n1 tsp Pepper\n1 tsp Thyme\n1 lb Carrots (cut into 2 chunks)\n2 lb Potatoes cut\n2 Clove Garlic\n2 Cups Beef Broth\n2 tblsp Cornstarch\n2 tblsp Cold Water"
+        },
+        "Name": {
+            "S": "Pot Roast"
+        }
+    },
+    {
+        "Id": {
+            "N": "9"
+        },
+        "Ingredients": {
+            "S": "1.5 lbs Chicken\n1 Lg Onion (chopped)\n2 Cloves Garlic (minced)\n2 Lg Carrots (diced)\n3 Celery Stalks (chopped)\n2 Lg Potatoes (diced)\n2 Cups Mushrooms\n9 Cups Chicken Broth\n1/2 tsp Thyme\n1 tblsp Mustard\n2 tsp Garlic Powder\n2 tsp Salt\nGround Pepper\n2 Cups Whole Milk\nParsley\n1 1/2 Cups Wild Rice"
+        },
+        "Name": {
+            "S": "Chicken And Wild Rice Soup"
+        }
+    },
+    {
+        "Id": {
+            "N": "22"
+        },
+        "Ingredients": {
+            "S": "Can of Biscuits\nCan of Cambells Chunky Pub Style Chicken Pot Pie"
+        },
+        "Name": {
+            "S": "Easy Chicken Pot Pie"
+        }
+    },
+    {
+        "Id": {
+            "N": "3"
+        },
+        "Ingredients": {
+            "S": "1 Cup Jasmine Rice\n10 tsp White Wine Vinegar\n8 oz Shredded Carrots\n8 oz Sour Cream\n2 tblsp Sesame Seeds\n2 Scallions\n2 Cucumbers\n20 oz Ground Beef\n8 oz Bulgogi Sauce\n2 tsp Siracha\n1 tsp Sugar\n2 tblsp Butter\n2 tsp Veg Oil\nSalt/Pepper"
+        },
+        "Name": {
+            "S": "Beef Bulgogi"
+        }
+    },
+    {
+        "Id": {
+            "N": "40"
+        },
+        "Ingredients": {
+            "S": "Salmon\nWhite or Jasmine Rice\nBlack Beans\nCorn\nSiracha"
+        },
+        "Name": {
+            "S": "Salmon Bowls"
+        }
+    },
+    {
+        "Id": {
+            "N": "19"
+        },
+        "Ingredients": {
+            "S": "Ravioli your choice\nBaby Spinach\nSun-dried Tomatoes\nHeavy Cream\nParmesan\nWhite Wine\nButter\nMinced Garlic\nOlive Oil\nItalian Seasoning\nCayenne Pepper (optional)"
+        },
+        "Name": {
+            "S": "Creamy Italian Ravioli"
+        }
+    },
+    {
+        "Id": {
+            "N": "16"
+        },
+        "Ingredients": {
+            "S": "Hotdogs\nBuns\nCheddar Cheese\nChilli"
+        },
+        "Name": {
+            "S": "Chilli Cheese Dogs"
+        }
+    },
+    {
+        "Id": {
+            "N": "27"
+        },
+        "Ingredients": {
+            "S": "1 lb Ground Beef\nSalt/Pepper\n1 Small Yellow Onion\n1 Clove Garlic\n8 oz Button Mushrooms\n1 tblsp Flour\n10.5 oz Cream of Mushroom\n2 1/4 Cups Beef Broth\n8 oz Wide Egg Noodle\n1/3 Cup Sour Cream\n2 tblsp Parsley"
+        },
+        "Name": {
+            "S": "Instant Pot Beef Stroganoff"
+        }
+    },
+    {
+        "Id": {
+            "N": "30"
+        },
+        "Ingredients": {
+            "S": "1 lb Chicken\n14 oz Andouille Sausage\n4 Cloves Garlic\n1 Italian Parsely\n1 qt Chicken Broth\n1 lb Penne Pasta\n1 1/2 tblsp Cajun Seasoning\nPepper/Salt\n4 tblsp Olive Oil\n2 1/2 Cups Heavy Cream\n4 oz Parmesan Cheese"
+        },
+        "Name": {
+            "S": "One Pot Cajun Chicken Alfredo"
+        }
+    },
+    {
+        "Id": {
+            "N": "10"
+        },
+        "Ingredients": {
+            "S": "1/2 lb Pasta (any short shape)\n1/2 lb Broccoli\n2/3 lb Chicken Breast\nSalt/Pepper\nCooking Oil (1 tblsp)\nButter (2 tblsp)\n1 Cup Evaporated Milk\nGarlic Powder\nPaprika\n8 oz Extra Sharp White Cheddar"
+        },
+        "Name": {
+            "S": "Chicken Broccoli White Cheddar Mac And Cheese"
+        }
+    },
+    {
+        "Id": {
+            "N": "17"
+        },
+        "Ingredients": {
+            "S": "Frozen Corndogs"
+        },
+        "Name": {
+            "S": "Corn Dogs"
+        }
+    },
+    {
+        "Id": {
+            "N": "26"
+        },
+        "Ingredients": {
+            "S": "1 Cup Chicken Stock or Water\n1 lb Chicken Breasts\n1/2 tsp Onion Powder\n1/2 tsp Garlic Powder\n1/2 tsp Paprika\n1/2 tsp Salt\n1 1/2 Cup BBQ Sauce\nBuns"
+        },
+        "Name": {
+            "S": "Instant Pot Bbq Chicken Sandwhich"
+        }
+    },
+    {
+        "Id": {
+            "N": "38"
+        },
+        "Ingredients": {
+            "S": "2 1/2-3 lb Beef Chuck Shoulder\nCreole Seasoning (1 tblsp.)\nFlour (4 tblsp.)\nCanola Oil (1/4 Cup)\n1 Diced Yellow Onion\nBeef Broth (3 Cups)\n1 tsp. Salt\n1 tsp. Pepper\nFrench Bread\nSliced Tomatoes\nShredded Lettuce\nPickles\nMayo\nHot Sauce"
+        },
+        "Name": {
+            "S": "Roast Beef PoBoy"
+        }
+    },
+    {
+        "Id": {
+            "N": "42"
+        },
+        "Ingredients": {
+            "S": "1 lb Shrimp\n2 Cloves Garlic\n1 tsp Cumin\n1 tsp Chilli Powder\n4 tblsp Olive Oil\n1 tblsp Butter\n3 Fresh Limes\n2 Cups Cabbage\n1 Lg Avocado\n1/2 lg Bunch Cilantro\n1-2 Cloves Garlic\n1 Jalapeno\n1/2 Cup Mayo\n1/2 Cup Sour Cream"
+        },
+        "Name": {
+            "S": "Shrimp Tacos"
+        }
+    },
+    {
+        "Id": {
+            "N": "47"
+        },
+        "Ingredients": {
+            "S": "2 Steaks\nBob Evans Mashed Potatoes\nVegetable of your choice"
+        },
+        "Name": {
+            "S": "Steak And Mashed Potatoes"
+        }
+    },
+    {
+        "Id": {
+            "N": "39"
+        },
+        "Ingredients": {
+            "S": "Salmon\nVegetable of your choice\nRice of your choice"
+        },
+        "Name": {
+            "S": "Salmon And Rice"
+        }
+    },
+    {
+        "Id": {
+            "N": "14"
+        },
+        "Ingredients": {
+            "S": "Cube Steak (2)\n1 Cup Buttermilk\n2 Eggs\n1 tsp Hot Sauce\n1/2 tsp Worcesttershire\n1/2 Cup Flour\n1/4 Cup CornStarch\n1 tsp Salt\n1/2 tsp Garlic Powder\n1/2 tsp Pepper\n3 tsp Cayenne\n2-4 Cups of Oil for frying\n1/4 Cup Onion (optional)\n1 tsp Garlic\n3 tblsp Flour\n1/2 Cup of Milk\n1 1/2 Cup Beef or Chicken Broth\nPinch Cayenne\nSalt/Pepper to Taste"
+        },
+        "Name": {
+            "S": "Chicken Fried Steak"
+        }
+    },
+    {
+        "Id": {
+            "N": "45"
+        },
+        "Ingredients": {
+            "S": "1 lb Ground Beef\n2 Spaghetti Sauce\nSpaghetti Noodles\nGarlic Bread"
+        },
+        "Name": {
+            "S": "Spaghetti"
+        }
+    },
+    {
+        "Id": {
+            "N": "1"
+        },
+        "Ingredients": {
+            "S": "1 lb Chicken Tenders\n1/4 Cup Mayo\n1 Tblsp Dijon Mustard\n1 Garlic Clove\n1/2 tsp Salt\n1/8 tsp Pepper\n1/2 Cup Panko\n1/2 Cup Parmesan\n1 Pinch of Paprika"
+        },
+        "Name": {
+            "S": "Air Fryer Chicken Tenders"
+        }
+    },
+    {
+        "Id": {
+            "N": "43"
+        },
+        "Ingredients": {
+            "S": "2 Chicken Breasts\n2 Cup Salsa\n8 oz Cream Cheese\n4 oz Green Chilis\nGarlic Powder\nOnion Powder\nSalt/Pepper\nCumin"
+        },
+        "Name": {
+            "S": "Slow Cooker Salsa Chicken"
+        }
+    },
+    {
+        "Id": {
+            "N": "34"
+        },
+        "Ingredients": {
+            "S": "4 Lg Potatoes (cubed)\n1/2 tsp Salt\n8 oz Bacon\n4 tblsp Butter\n1/2 Yellow Onion\n2 Cloves Garlic\n1/2 Cup Flour\n2 1/2 Cup Milk\n2 1/2 Cup Chicken Broth\n1 Cup Sharp Cheddar\n3/4 Cup Sour Cream\nSalt/Pepper"
+        },
+        "Name": {
+            "S": "Creamy Potato Soup"
+        }
+    },
+    {
+        "Id": {
+            "N": "4"
+        },
+        "Ingredients": {
+            "S": "Ground Beef\nTacoBell Seasoning\nRefried Beans\nShredded Cheese\nSoft Taco Tortillas"
+        },
+        "Name": {
+            "S": "Beef Tacos"
+        }
+    },
+    {
+        "Id": {
+            "N": "48"
+        },
+        "Ingredients": {
+            "S": "16 Jumbo Shells\n1 1/2 tblsp Olive Oil\n2 tsp Garlic\n4 Cups Packed Spinach\n12 oz Ricotta\n1 Cup Shredded Mozzarella\n1/2 Cup Grated Parmesan\n1 Large Egg\nBasil\nSalt \nPepper\n1 1/4 Cups Marinara"
+        },
+        "Name": {
+            "S": "Stuffed Shells"
+        }
+    },
+    {
+        "Id": {
+            "N": "15"
+        },
+        "Ingredients": {
+            "S": "Rotisserie Chicken\nLarge Can of VegAll\nLarge Can of Cream of Chicken\n1 Can of Peas\nTable Seasoning\nPie Crust"
+        },
+        "Name": {
+            "S": "Chicken Pot Pie"
+        }
+    },
+    {
+        "Id": {
+            "N": "8"
+        },
+        "Ingredients": {
+            "S": "4 tblsp Extra Virgin Olive Oil\n1 lb Chicken (cubed)\n1/2 tsp Salt\nGround Pepper to taste\n14 oz Smoked Sausage\n4 Cloves Garlic\n1 qt Chicken Broth\n2 1/2 Cups Heavy Cream\n1 lb Pene Pasta\nCajun Seasoning\n4 oz Parmesan\n1 Cup Parsley (minced)"
+        },
+        "Name": {
+            "S": "Chicken And Sausage Alfredo Pasta"
+        }
+    },
+    {
+        "Id": {
+            "N": "13"
+        },
+        "Ingredients": {
+            "S": "White Rice\nFrozen Peas\nSesame Oil (3 tblsp)\nSoy Sauce\n2 Eggs\n2 tsp Garlic\n1 Chopped Yellow Onion\nYumYum Sauce\nChicken\nSalt/Pepper"
+        },
+        "Name": {
+            "S": "Chicken Fried Rice"
+        }
+    },
+    {
+        "Id": {
+            "N": "37"
+        },
+        "Ingredients": {
+            "S": "White Rice\nPico\nShredded Lettuce\nThin Sliced Chicken\nSharp Cheddar Cheese\nPanko\nMayo\nKetchup\nSiracha\nEgg\nOil for frying"
+        },
+        "Name": {
+            "S": "Rhino Chaser"
+        }
+    },
+    {
+        "Id": {
+            "N": "31"
+        },
+        "Ingredients": {
+            "S": "2 Chicken Breasts\n1 tsp Salt and Pepper\n1/2 Cup Cornstarch\n1 1/2 Cups Flour\n1 Egg\n1 tblsp Oil\n1 1/4 Cups Water\n3-4 Cups Oil for frying\n1/4 Cup Orange Juice\n1 tsp Orange Zest\n2 tblsp Soy Sauce\n1/4 Cup White Vinegar\n1/2 Cup Brown Sugar\n2 tsp Garlic\n2 tblsp Cornstarch\n2 tblsp Water\n1 tblsp Oil"
+        },
+        "Name": {
+            "S": "Orange Chicken And White Rice"
+        }
+    },
+    {
+        "Id": {
+            "N": "23"
+        },
+        "Ingredients": {
+            "S": "1/4 lb Sirloin Steak\n4 spiralized Zucchini (2 frozen bags)\n1 tblsp Olive Oil\n3 tblsp Butter\n2 tsp Garlic\n1/4 Cup Beef or Veg Broth\n1 tblsp Parsley (minced)\n1 tsp Thyme\n1/2 tsp Red Pepper Flakes\n1 Lemon\n1/4 Cup Soy Sauce\n1 tblsp Siracha\nPepper"
+        },
+        "Name": {
+            "S": "Garlic Butter Steak And Zoodles"
+        }
+    },
+    {
+        "Id": {
+            "N": "46"
+        },
+        "Ingredients": {
+            "S": "\"3 tblsp Olive Oil, Divided\"\n1 Pack Prosciutto\nSalt/Pepper\n4 Cups Chopped Spinach\n1 Cup Ricotta\n1/2 tsp Dried Thyme\n1/2 tsp Dried Oregano\n1/2 tsp Dried Basil\n1/4 Cup Cornmeal or Flour\nPizza Crust\n\"8, 1 oz Slices Mozzarella Cheese\"\nGarlic (one head)\nRed Pepper Flakes"
+        },
+        "Name": {
+            "S": "Spinach And Prosciutto Pizza"
+        }
+    },
+    {
+        "Id": {
+            "N": "33"
+        },
+        "Ingredients": {
+            "S": "Frozen Pizza Rolls"
+        },
+        "Name": {
+            "S": "Pizza Rolls"
+        }
+    },
+    {
+        "Id": {
+            "N": "29"
+        },
+        "Ingredients": {
+            "S": "Choice of Meat\nQueso\nTortilla Chips\nRefried Beans\nMexican Blend Cheese\nAdditional Topping of your choosing"
+        },
+        "Name": {
+            "S": "Nacho Night"
+        }
+    },
+    {
+        "Id": {
+            "N": "12"
+        },
+        "Ingredients": {
+            "S": "Chicken Breast\n1 Large Egg\n3/4 Cup Flour\n1 tsp Salt\n1 tsp Garlic Powder\n1/2 tsp Oregano\n1/2 tsp Pepper\n1/2 tsp Cayenne\nVeg Oil for frying\n1/4 Cup Butter\n1/4 Cup Flour\n2 1/2 Cup Milk\nPepper\nPaprika"
+        },
+        "Name": {
+            "S": "Chicken Fried Chicken"
+        }
+    },
+    {
+        "Id": {
+            "N": "25"
+        },
+        "Ingredients": {
+            "S": "Hawaiin Sweet Rolls (24)\n1 Pack Deli Ham (16 oz)\n12 Slices Swiss Cheese\n1/2 Cup Butter\n1 tblsp Poppy Seeds\n1 1/2 tsp Worcestershire Sauce\n1 1/2 tsp Dijon Mustard\n1 tsp Onion Powder"
+        },
+        "Name": {
+            "S": "Hawaiin Roll Ham Sliders"
+        }
+    },
+    {
+        "Id": {
+            "N": "50"
+        },
+        "Ingredients": {
+            "S": "Frozen Taquitos"
+        },
+        "Name": {
+            "S": "Taquitos"
+        }
+    },
+    {
+        "Id": {
+            "N": "6"
+        },
+        "Ingredients": {
+            "S": "Chicken\nBob Evans Mashed Potatoes\nVegetable of your choice"
+        },
+        "Name": {
+            "S": "Chicken And Mashed Potatoes"
+        }
+    },
+    {
+        "Id": {
+            "N": "51"
+        },
+        "Ingredients": {
+            "S": "Choice of Meat\nRefried Beans\nTostada Shells\nCheese (Cotija or Mexican Blend)\nCorn Salsa (optional)\nSide of Rice (optional)"
+        },
+        "Name": {
+            "S": "Tostadas"
+        }
+    },
+    {
+        "Id": {
+            "N": "32"
+        },
+        "Ingredients": {
+            "S": "Frozen Pizza of your choice"
+        },
+        "Name": {
+            "S": "Pizza Night"
+        }
+    },
+    {
+        "Id": {
+            "N": "18"
+        },
+        "Ingredients": {
+            "S": "2 tblsp Butter\n1 Can Cream of Mushroom (10.75 oz)\n1 1/4 Cup Water\n1 Can Evaporated Milk (12 oz)\n1 Onion (optional)\nBroccoli\nWhite Rice\nSkinless Chicken"
+        },
+        "Name": {
+            "S": "Creamy Chicken And Rice"
+        }
+    },
+    {
+        "Id": {
+            "N": "24"
+        },
+        "Ingredients": {
+            "S": "1 lb Ground Meat\nBuns\nChoice of Cheese\nLettuce\nTomato\nKetchup\nMayo\nFries (Optional)"
+        },
+        "Name": {
+            "S": "Hamburgers"
+        }
+    },
+    {
+        "Id": {
+            "N": "11"
+        },
+        "Ingredients": {
+            "S": "1 Red Bell Pepper\n1 Green Bell Pepper\n1 Onion\n3/4 tsp Chili Powder\n1/2 tsp Garlic Salt\nPepper\nChicken Breasts\nMexican Blend Cheese\nTortillas\nBlack Beans (optional)"
+        },
+        "Name": {
+            "S": "Chicken Fajita Quesadilla"
+        }
+    },
+    {
+        "Id": {
+            "N": "7"
+        },
+        "Ingredients": {
+            "S": "Chicken\nRice of your Choice\nVegetable of your choice"
+        },
+        "Name": {
+            "S": "Chicken And Rice"
+        }
+    },
+    {
+        "Id": {
+            "N": "28"
+        },
+        "Ingredients": {
+            "S": "1 lb Spaghetti\n3 tblsp Butter\n1 lb Cremini Mushrooms\nSalt\nPepper\n6 Cloves minced Garlic\n1/2 tsp Red Pepper Flakes\n1/2 Cup Romano Cheese\n2 tblsp Parsley (chopped)\n1 tblsp Olive Oil"
+        },
+        "Name": {
+            "S": "Mushroom And Garlic Spaghetti"
+        }
+    },
+    {
+        "Id": {
+            "N": "36"
+        },
+        "Ingredients": {
+            "S": "Choice of Meat (optional)\nRefried Beans\nMexican Cheese Blend\nTortillas\nSide of Rice(optional)"
+        },
+        "Name": {
+            "S": "Quesadilla"
+        }
+    },
+    {
+        "Id": {
+            "N": "2"
+        },
+        "Ingredients": {
+            "S": "Chicken Wings\n2 tblsp Baking Powder\n3/4 tsp Salt\n1/2 tsp Pepper\n1 tsp Paprika\n1 tsp Garlic Powder"
+        },
+        "Name": {
+            "S": "Baked Wings"
+        }
+    },
+    {
+        "Id": {
+            "N": "41"
+        },
+        "Ingredients": {
+            "S": "1 package Anouille Sausage\n1 lb Shrimp\n1 lb Baby Dutch Yellow Potatoes\n3 ears Corn\n4 Cloves of Garlic\n1 Lemon Wedge\n2 tblsp Parsely\n1 tblsp Old Bay Seasoning\n1/4 Cup Butter"
+        },
+        "Name": {
+            "S": "Sheet Pan Shrimp Boil"
+        }
+    },
+    {
+        "Id": {
+            "N": "44"
+        },
+        "Ingredients": {
+            "S": "Rotisserie Chicken\n10 Flour Tortillas\n1 Small Onion\n3 tbsp Butter\n3 tbsp Flour\n2 Cups Chicken Broth\n1 Cup Sour Cream\n1 Can Green Chiles (4 oz)\nMonterey Jack Cheese (16 oz)"
+        },
+        "Name": {
+            "S": "Sour Cream Chicken Enchiladas"
+        }
+    },
+    {
+        "Id": {
+            "N": "5"
+        },
+        "Ingredients": {
+            "S": "2 Chicken Breasts\n3 Cloves of Garlic\n2 tblsp Parsely\n3 Zucchinis or Frozen Zoodles\nPepper/Salt\n2 tblsp Butter\n3/4 Cup Cream\n1 Cup Parmesan Cheese"
+        },
+        "Name": {
+            "S": "Chicken Alfredo Zoodles"
+        }
+    }
+]
